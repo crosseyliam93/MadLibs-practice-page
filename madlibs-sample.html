@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="new-madlibs.css">
+	<title id = "top">Bohemian Rhapso-Do-It-Yourself</title>
+</head>
+
+<script>
+
+	function freeLibs() {
+		var story = document.getElementById("story");
+		var genre = document.getElementById("genre").value;
+		var bodyPart = document.getElementById("bodyPart").value;
+		var boy = document.getElementById("boy").value;
+		var direction = document.getElementById("direction").value;
+		var candles = document.getElementById("candles").value;
+
+		story.innerHTML = "Is this the real life? <br> Is this just " +genre + "?<br> Caught in a landslide,<br> No escape from reality.<br> Open your " +bodyPart + ",<br>Look up to the skies and see,<br> I'm just a poor " +boy + ", I need no sympathy,<br> Because I'm easy come, easy go,<br> Little high, little " +direction + ",<br> Any way the wind " +direction + " doesn't really matter to me, to me.";
+	}
+
+	function freeLibsTwo() {
+		var storyTwo = document.getElementById("storyTwo");
+		var gym = document.getElementById("gym").value;
+		var fruit = document.getElementById("fruit").value;
+		var illness = document.getElementById("illness").value;
+		var rottenFruit = document.getElementById("rottenFruit").value;
+		var sad = document.getElementById("sad").value;
+		var jungleAnimal = document.getElementById("jungleAnimal").value;
+
+		storyTwo.innerHTML = "Mama, just " +gym + "a man,<br>Put a " +fruit + " against his head,<br>Pulled my trigger, now he's " +illness + ".<br>Mama, life had just begun,<br>But now I've gone and " +rottenFruit + ".<br>Mama, ooh,<br>Didn't mean to make you " +sad + ",<br>If I'm not back again this time tomorrow,<br>Carry on, carry on as if " +jungleAnimal + " really matters.";
+ 	}
+
+
+ 	function freeLibsThree() {
+ 		var storyThree = document.getElementById("storyThree");
+ 		var insects = document.getElementById("insects").value;
+ 		var show = document.getElementById("show").value;
+ 		var mama = document.getElementById("mama").value;
+ 		var dance = document.getElementById("dance").value;
+ 		var car = document.getElementById("car").value;
+ 		var animal = document.getElementById("animal").value;
+
+
+ 		storyThree.innerHTML = "Too late, my time has come,<br> Sends " +insects + " down my spine,<br> Body's aching all the time.<br> Goodbye, everybody, I've got to go,<br> Gotta leave you all behind and face the " +show + ".<br> " +mama + ", ooh (Any way the wind blows),<br> I don't want to die,<br> I sometimes wish I'd never been born at all.<br> I see a little silhouetto of a man,<br> Scaramouche, Scaramouche, will you do the "+dance + "?<br> Thunderbolt and lightning very, very frightening me.<br> (Galileo) Galileo.<br> (Galileo) Galileo,<br> Galileo Figaro<br> Magnifico-o-o-o-o.<br> I'm just a poor "+car + ", nobody loves me.<br> He's just a poor "+car + " from a poor family,<br> Spare him his life from this "+ animal +".";
+
+ 	}
+
+ 	function freeLibsFour() {
+ 		var storyFour = document.getElementById("storyFour");
+ 		var country = document.getElementById("country").value;
+ 		var athlete = document.getElementById("athlete").value;
+ 		var tool = document.getElementById("tool").value;
+ 		var emotion = document.getElementById("emotion").value;
+ 		var dish = document.getElementById("dish").value;
+ 		var verb = document.getElementById("verb").value;
+ 		var verbTwo = document.getElementById("verbTwo").value;
+
+ 		storyFour.innerHTML = "Easy come, easy go, will you let me go? <br>" +country + "! No, we will not let you go. (Let him go!)<br> " +country + "! We will not let you go. (Let him go!)<br> " +country + "! We will not let you go. (Let me go!)<br> Will not let you go. (Let me go!)<br> Never let you go (Never, never, never, never let me go)<br> Oh oh oh oh<br> No, no, no, no, no, no, no<br> Oh, mama mia, mama mia (Mama mia, let me go.)<br> " +athlete + " has a devil put aside for me, for me, for me.<br> So you think you can "+tool + " me and spit in my eye?<br> So you think you can "+emotion + " me and leave me to die?<br> Oh, baby, can't do this to me, "+dish + ",<br> Just gotta get out, just gotta get right outta here.<br><br> (Ooooh, ooh yeah, ooh yeah)<br><br> Nothing really " + verb + ",<br> Anyone can see,<br> Nothing really "+verb + ",<br> Nothing really "+verb + " to me.<br> Any way the wind " +verbTwo+"...";
+ 	}
+	
+
+	/* Below contains the lyrics for Bohemian Rhapsody, which is the song I used to create the skeleton for the JavaScript function.
+
+
+	Is this the real life?
+Is this just FANTASY?
+Caught in a landslide,
+No escape from reality.
+
+Open your EYES,
+Look up to the skies and see,
+I'm just a poor BOY, I need no sympathy,
+Because I'm easy come, easy go,
+Little high, little LOW,
+Any way the wind BLOWS doesn't really matter to me, to me.-- 1
+
+Mama, just KILLED a man,
+Put a GUN against his head,
+Pulled my trigger, now he's DEAD.
+Mama, life had just begun,
+But now I've gone and THROWN IT ALL AWAY.
+
+Mama, ooh,
+Didn't mean to make you CRY,
+If I'm not back again this time tomorrow,
+Carry on, carry on as if NOTHING really matters. -- 2
+
+Too late, my time has come,
+Sends SHIVERS down my spine,
+Body's aching all the time.
+Goodbye, everybody, I've got to go,
+Gotta leave you all behind and face the TRUTH.
+
+MAMA, ooh (Any way the wind blows),
+I don't want to die,
+I sometimes wish I'd never been born at all.
+
+I see a little silhouetto of a man,
+Scaramouche, Scaramouche, will you do the FANDANGO?
+Thunderbolt and lightning very, very frightening me.
+(Galileo) Galileo.
+(Galileo) Galileo,
+Galileo Figaro
+Magnifico-o-o-o-o.
+
+I'm just a poor BOY, nobody loves me.
+He's just a poor BOY from a poor family,
+Spare him his life from this MONSTROSITY. -- 3
+
+Easy come, easy go, will you let me go?
+BISMILLAH! No, we will not let you go. (Let him go!)
+BISMILLAH! We will not let you go. (Let him go!)
+BISMILLAH! We will not let you go. (Let me go!)
+Will not let you go. (Let me go!)
+Never let you go (Never, never, never, never let me go)
+Oh oh oh oh
+No, no, no, no, no, no, no
+Oh, mama mia, mama mia (Mama mia, let me go.)
+BEELZEBUB has a devil put aside for me, for me, for me.
+
+So you think you can STONE me and spit in my eye?
+So you think you can LOVE me and leave me to die?
+Oh, baby, can't do this to me, BABY,
+Just gotta get out, just gotta get right outta here.
+
+(Ooooh, ooh yeah, ooh yeah)
+
+Nothing really MATTERS,
+Anyone can see,
+Nothing really MATTERS,
+Nothing really MATTERS to me.
+
+Any way the wind BLOWS.. -- 4*/
+</script>
+
+<body>
+	
+<h1 class = "mad-heading">Follow the instructions below for a surprise.</h1>
+<h2 class = "mad-heading">Make your own rock opera.</h2>
+<p>Favorite genre of storytelling?</p> <input type = "text" id = "genre"></input>
+<p>Least favorite body part?</p> <input type = "text" id = "bodyPart"></input>
+<p>Are you a boy or a girl?</p> <input type = "text" id = "boy"></input>
+<p>Would you rather be high or low?</p> <input type = "text" id = "direction"></input>
+<p>What do you to do candles on a birthday cake?</p> <input type = "text" id = "candles"></input>
+
+<button id = "button-story" onclick = "freeLibs()">Let's ROCK</button>
+
+<p id = "story"></p>
+
+<h2 class = "mad-heading">Let the rocking continue.</h2>
+<p>What was the last thing you did at the gym?</p> <input type = "text" id = "gym"></input>
+<p>What is your favorite piece of fruit?</p> <input type = "text" id = "fruit"></input>
+<p>What type of illness do you despise the most?</p> <input type = "text" id = "illness"></input>
+<p>If you have a piece of rotten fruit in your hand, what do you do with it?</p> <input type = "text" id = "rottenFruit"></input>
+<p>What happens to some people when they watch a sad movie?</p> <input type = "text" id = "sad"></input>
+<p>Favorite type of jungle animal?</p> <input type = "text" id = "jungleAnimal"></input>
+
+<button id = "button-storyTwo" onclick = "freeLibsTwo()">Let's ROCK AGAIN!</button>
+
+<p id = "storyTwo">Check it out!</p>
+<!--
+
+Let the rocking continue.
+-continue with the song, have five more options, then create a new JavaScript code. 
+-id = "storyTwo"<p></p>
+<p></p>
+<p></p>-->
+
+<h2 class = "mad-heading">The show must go on!</h2>
+<p>What insect scares you the most?</p> <input id = "insects" type = "text"></input>
+<p>What is the name of your favorite television show?</p> <input id = "show" type = "text"></input>
+<p>Mama or pappa?</p> <input id = "mama" type = "text"></input>
+<p>What is your favorite type of dance?</p> <input id = "dance" type = "text"></input>
+<p>If you were a car, what kind of car would you be?</p> <input id = "car" type = "text"></input>
+<p>What is your least favorite type of animal?</p> <input id = "animal" type = "text"></input>
+
+<button id = "button-storyThree" onclick = "freeLibsThree()">The show goes on!</button>
+
+<p id = "storyThree">Keep it going!</p>
+
+<h2 class = "mad-heading">Here comes the big finale!</h2>
+<p>What country has the coolest name?</p> <input id = "country" type = "text"></input>
+<p>Which athlete do you hate the most?</p> <input type="text" id="athlete"></input>
+<p>Which gardening tool is the most useful?</p> <input id = "tool" type = "text"></input>
+<p>What is your favorite emotion?</p> <input id = "emotion" type = "text"></input>
+<p>What is your favorite dish?</p> <input id = "dish" type = "text"></input>
+<p>Give me a verb.</p> <input id = "verb" type = "text"></input>
+<p>Give me another verb.</p> <input id = "verbTwo" type = "text"></input>
+
+<button id = "button-storyFour" onclick = "freeLibsFour()">The big finale!</button>
+
+<p id = "storyFour">The big finale!</p>
+</body>

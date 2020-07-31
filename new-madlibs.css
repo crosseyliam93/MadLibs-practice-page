@@ -1,0 +1,34 @@
+body {
+	background-color: #00ff80;
+}
+#story {
+	font-size: 35px;
+}
+
+#storyTwo {
+	font-size: 35px;
+}
+
+#storyThree {
+	font-size: 35px;
+}
+
+#storyFour {
+	font-size: 35px;
+}
+
+.mad-heading {
+	
+	border-left-style: solid;
+	border-radius: 14px;
+	padding: 25px 25px 25px 25px;
+	
+}
+
+p {
+	font-size: 24px;
+}
+
+input {
+	height: 24px;
+}
